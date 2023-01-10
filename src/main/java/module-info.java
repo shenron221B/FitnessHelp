@@ -6,5 +6,3 @@ module com.example.fitnesshelp {
     opens com.example.fitnesshelp to javafx.fxml;
     exports com.example.fitnesshelp;
 }
-
-//ciao

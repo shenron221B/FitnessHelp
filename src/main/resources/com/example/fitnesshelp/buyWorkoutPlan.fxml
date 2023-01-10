@@ -54,7 +54,7 @@
             <Image url="@../../../logout.png" />
          </image>
       </ImageView>
-      <Hyperlink fx:id="personalTrainerHyperlink" layoutX="230.0" layoutY="106.0" onAction="#clickedOnPersonalTrainerHyperlink" text="&gt; buy workout plan">
+      <Hyperlink fx:id="buyWorkoutPlanHyperlink1" layoutX="230.0" layoutY="106.0" onAction="#clickedOnBuyWorkoutPlanHyperlink1" text="&gt; buy workout plan">
          <font>
             <Font size="14.0" />
          </font>

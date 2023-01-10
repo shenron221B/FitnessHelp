@@ -35,6 +35,9 @@ public class BuyWorkoutPlan {
     private Hyperlink buyWorkoutPlanHyperlink;
 
     @FXML
+    private Hyperlink buyWorkoutPlanHyperlink1;
+
+    @FXML
     private AnchorPane dataWorkoutPlan1Pane;
 
     @FXML
@@ -121,8 +124,12 @@ public class BuyWorkoutPlan {
     }
 
     @FXML
-    void clickedOnButtonInfoWorkoutPlan(ActionEvent event) {
-
+    void clickedOnButtonInfoWorkoutPlan(ActionEvent event) throws IOException {
+        root = new FXMLLoader(getClass().getResource("buyInfoWorkoutPlan.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -146,8 +153,12 @@ public class BuyWorkoutPlan {
     }
 
     @FXML
-    void clickedOnButtonPreviewWorkoutPlan(ActionEvent event) {
-
+    void clickedOnButtonPreviewWorkoutPlan(ActionEvent event) throws IOException {
+        root = new FXMLLoader(getClass().getResource("buyPreviewWorkoutPlan.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -157,6 +168,15 @@ public class BuyWorkoutPlan {
 
     @FXML
     void clickedOnBuyWorkoutPlanHyperlink(ActionEvent event) throws IOException {
+        root = new FXMLLoader(getClass().getResource("buyWorkoutPlan.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void clickedOnBuyWorkoutPlanHyperlink1(ActionEvent event) throws IOException {
         root = new FXMLLoader(getClass().getResource("buyWorkoutPlan.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root.load());
